@@ -1,13 +1,15 @@
 import React from 'react';
 import '../styles/App.css';
-
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import InfoGame from './Games/InfoGame';
-import BuyGame from "./Games/BuyGame";
+import BuyGame from './Games/BuyGame';
+import store from '../store/store';
 
 
 function App() {
+
+  console.log(store.getState());
   return (
     <div className="App container">
       <div className="row">
