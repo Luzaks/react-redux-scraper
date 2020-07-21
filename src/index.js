@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import './styles/index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
+import games_reducer from './reducers/rootReducer';
+
+
+const store = createStore(
+    games_reducer
+);
+
+store.subscribe(() => {
+
+});
 
 ReactDOM.render(
+  <Provider store={store}>
     <React.StrictMode>
       <App />
-    </React.StrictMode>,
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 
