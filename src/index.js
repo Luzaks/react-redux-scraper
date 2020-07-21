@@ -2,19 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import rootReducer from "./reducers/rootReducer";
 import './styles/index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-import games_reducer from './reducers/rootReducer';
+import { buy_pokemon_action } from './actions/actions';
+import initialState from './state/initialState';
 
 
 const store = createStore(
-    games_reducer
+    rootReducer,
+    initialState
 );
-
+console.log('inicial:', store.getState());
 store.subscribe(() => {
-
+    console.log('cambio:', store.getState());
 });
+
+store.dispatch(buy_pokemon_action(3));
 
 ReactDOM.render(
   <Provider store={store}>

@@ -1,9 +1,7 @@
-import initialState from '../state/initialState';
+import { combineReducers } from 'redux';
+import games_reducer from './games_reducer'
 
-const games_reducer = (state = initialState, action) => {
-    switch(action.type) {
-        default: return state;
-    }
-};
+export default combineReducers({
+    games: games_reducer
+});
 
-export default games_reducer;
