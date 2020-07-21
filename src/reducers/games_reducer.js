@@ -1,7 +1,8 @@
 import { BUY_POKEMON, RETURN_POKEMON } from '../actions/actionTypes';
 
-const games_reducer = (state = [], action) => {
+const games = (state = [], action) => {
     switch(action.type) {
+
         case BUY_POKEMON:
             return {
                     ...state,
@@ -15,4 +16,4 @@ const games_reducer = (state = [], action) => {
         default: return state;
     }
 };
-export default games_reducer;
+export default games;

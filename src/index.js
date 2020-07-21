@@ -7,6 +7,7 @@ import './styles/index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import initialState from './state/initialState';
+import {buy_pokemon_action} from "./actions/actions";
 
 
 const store = createStore(
@@ -17,6 +18,8 @@ console.log('inicial:', store.getState());
 store.subscribe(() => {
     console.log('cambio:', store.getState());
 });
+
+store.dispatch(buy_pokemon_action(1));
 
 ReactDOM.render(
   <Provider store={store}>
