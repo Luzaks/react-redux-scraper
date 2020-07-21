@@ -1,4 +1,4 @@
-import { BUY_POKEMON } from './actionTypes';
+import { BUY_POKEMON, RETURN_POKEMON } from './actionTypes';
 
 const buy_pokemon_action = (cant) => {
     return {
@@ -7,6 +7,14 @@ const buy_pokemon_action = (cant) => {
     }
 };
 
+const return_pokemon_action = (cant) => {
+  return {
+      type: RETURN_POKEMON,
+      payload: cant
+  }
+};
+
 export {
-    buy_pokemon_action
+    buy_pokemon_action,
+    return_pokemon_action
 }
