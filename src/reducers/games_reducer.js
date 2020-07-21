@@ -3,7 +3,6 @@ import { BUY_POKEMON, RETURN_POKEMON } from '../actions/actionTypes';
 const games_reducer = (state = [], action) => {
     switch(action.type) {
         case BUY_POKEMON:
-            console.log(state);
             return {
                     ...state,
                     pokemon: state.pokemon - action.payload

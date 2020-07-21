@@ -6,7 +6,6 @@ import rootReducer from "./reducers/rootReducer";
 import './styles/index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-import { buy_pokemon_action, return_pokemon_action } from './actions/actions';
 import initialState from './state/initialState';
 
 
@@ -18,9 +17,6 @@ console.log('inicial:', store.getState());
 store.subscribe(() => {
     console.log('cambio:', store.getState());
 });
-
-store.dispatch(buy_pokemon_action(3));
-store.dispatch(return_pokemon_action(2));
 
 ReactDOM.render(
   <Provider store={store}>
