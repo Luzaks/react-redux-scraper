@@ -1,13 +1,22 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 class InfoGame extends Component {
     render() {
         return (
             <React.Fragment>
-                unidades: 30
+                Stock: {this.props.games.pokemon}
             </React.Fragment>
         )
     }
 }
 
-export default InfoGame;
+const mapStateToProps = (state) => {
+    return {
+        games: {
+            pokemon: state.games.pokemon
+        }
+    }
+};
+
+export default connect(mapStateToProps)(InfoGame);

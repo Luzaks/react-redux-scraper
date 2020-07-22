@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import InfoGame from './Games/InfoGame';
 import BuyGame from './Games/BuyGame';
-import { connect } from 'react-redux';
 
 
 function App() {
