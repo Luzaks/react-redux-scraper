@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/App.css';
+import '../../styles/App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import InfoGameHook from './Games/InfoGame.hook';
@@ -17,7 +17,7 @@ function App() {
           <div className="card mt-5 cardy">
             <div className="row no-gutters">
               <div className="col-4">
-                <img className="card-img" src={require('../assets/img/pok.jpg')} alt="pokemon"/>
+                <img className="card-img" src={require('../../assets/img/pok.jpg')} alt="pokemon"/>
               </div>
               <div className="col-8">
                 <div className="card-body">
