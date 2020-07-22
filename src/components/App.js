@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import InfoGameHook from './Games/InfoGame.hook';
 import BuyGameHook from './Games/BuyGame.hook';
+import SearchPokemon from './Search/SearchPokemon';
+import ReturnedPokemon from "./Search/ReturnedPokemon";
 
 
 function App() {
@@ -29,7 +31,14 @@ function App() {
           </div>
         </div>
       </div>
-
+      <div className="row">
+        <div className="col-12 mt-4 border-top pt-3">
+          <SearchPokemon/>
+        </div>
+        <div className="col-12">
+          <ReturnedPokemon/>
+        </div>
+      </div>
     </div>
   );
 }
