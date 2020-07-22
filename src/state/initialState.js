@@ -6,6 +6,11 @@ const initialState = {
     consoles: {
         playstation: 10,
         nintendo: 10
+    },
+    search: {
+        loading: false,
+        searched: [],
+        error:''
     }
 };
 
