@@ -2,8 +2,8 @@ import React from 'react';
 import '../styles/App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
-import InfoGame from './Games/InfoGame';
-import BuyGame from './Games/BuyGame';
+import InfoGameHook from './Games/InfoGame.hook';
+import BuyGameHook from './Games/BuyGame.hook';
 
 
 function App() {
@@ -20,9 +20,9 @@ function App() {
               <div className="col-8">
                 <div className="card-body">
                   <div className="card-title h3 text-center">
-                    <InfoGame />
+                    <InfoGameHook />
                   </div>
-                  <BuyGame />
+                  <BuyGameHook />
                 </div>
               </div>
             </div>
