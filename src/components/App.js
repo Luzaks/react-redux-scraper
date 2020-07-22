@@ -4,12 +4,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import InfoGame from './Games/InfoGame';
 import BuyGame from './Games/BuyGame';
-import store from '../store/store';
+import { connect } from 'react-redux';
 
 
 function App() {
 
-  console.log(store.getState());
   return (
     <div className="App container">
       <div className="row">
