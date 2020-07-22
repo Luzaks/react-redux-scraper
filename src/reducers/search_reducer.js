@@ -16,7 +16,7 @@ const search = (state = [], action) => {
         case FETCH_FAILURE:
             return {
                 loading: false,
-                pokemon: [],
+                searched: [],
                 error: action.payload
             };
         default: return state;
