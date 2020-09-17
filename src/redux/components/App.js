@@ -6,6 +6,7 @@ import InfoGameHook from './Games/InfoGame.hook';
 import BuyGameHook from './Games/BuyGame.hook';
 import SearchPokemon from './Search/SearchPokemon';
 import ReturnedPokemon from "./Search/ReturnedPokemon";
+import ParticlesBg from 'particles-bg';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <ReturnedPokemon/>
         </div>
       </div>
+      <ParticlesBg type="random" bg={true} />
     </div>
   );
 }
